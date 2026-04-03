@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-dark antialiased;
+    scroll-behavior: smooth;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer components {
+  /* Magnetic Button Base */
+  .magnetic-btn {
+    @apply relative inline-flex items-center justify-center overflow-hidden transition-transform duration-500 font-bold tracking-tight rounded-[2rem];
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .magnetic-btn:hover {
+    transform: scale(1.03);
+  }
+  .magnetic-btn-primary {
+    @apply bg-accent text-white px-8 py-4;
+  }
+  .magnetic-btn .hover-bg {
+    @apply absolute inset-0 bg-dark w-full h-full transform translate-y-full transition-transform duration-500 rounded-[2rem] z-0;
+  }
+  .magnetic-btn:hover .hover-bg {
+    @apply translate-y-0;
+  }
+  .magnetic-btn span {
+    @apply relative z-10;
+  }
+
+  /* Interactive Elements */
+  .interactive-lift {
+    @apply transition-transform duration-300 block;
+  }
+  .interactive-lift:hover {
+    transform: translateY(-1px);
+  }
+  
+  /* Containers radius defined by preset */
+  .panel {
+    @apply rounded-[2rem] border border-dark/10 shadow-lg bg-background overflow-hidden relative;
+  }
+}
