@@ -2,9 +2,9 @@ import React from 'react';
 import { Check } from 'lucide-react';
 
 const plans = [
-  { name: 'Starter', price: '$750', period: '/mo', features: ['1 Agent', 'Up to 3 Integrations', 'Email / Async Support', 'Monthly Summary'], cta: 'Deploy Trial', highlight: false },
-  { name: 'Growth', price: '$1,800', period: '/mo', features: ['3 Agents', 'Up to 8 Integrations', 'Priority + Monthly Call', 'Bi-weekly Report'], cta: 'Initialize Scaling', highlight: true },
-  { name: 'Enterprise', price: '$4,500+', period: '/mo', features: ['Unlimited Agents', 'Unlimited Integrations', 'Dedicated CSM', 'Real-time Dashboard'], cta: 'Custom Protocol', highlight: false },
+  { name: 'Core Agent', price: '$1,200', period: '/mo', features: ['1 Autonomous Agent', 'Standard Integrations', 'Email Support', 'Monthly Summary'], cta: 'Deploy Basic', highlight: false },
+  { name: 'Growth', price: '$2,800', period: '/mo', features: ['3 Autonomous Agents', 'Advanced Integrations', 'Priority Support', 'Bi-weekly Report'], cta: 'Initialize Scaling', highlight: false },
+  { name: 'Enterprise Scale', price: '$2,950', period: '/mo', features: ['Unlimited Agents', 'Unlimited Integrations', 'Dedicated CSM', 'Real-time Dashboard'], cta: 'Initialize Unlimited', highlight: true },
 ];
 
 export const Pricing = () => {
